@@ -1,0 +1,154 @@
+.h1{
+    padding-bottom: 10px;
+    font-size: 18px;
+
+}
+main{
+    min-height: calc(100vh-253.5px-153px);
+    color: #133854;
+}
+
+nav,footer,nav a , footer a{
+    background-color: #133854;
+    color: white;
+    font-size: 18pt;
+}
+nav{
+    text-align: left;
+    padding: 10px;
+}
+
+
+.logo{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family:"Comic Sans MS";
+    color: rgb(9, 9, 88);
+}
+
+.photo{
+    float: right;
+    padding: 0;
+    margin: 0; 
+}
+
+.form{
+    padding: 10px;
+}
+input{
+    padding: 5px;
+}
+input[type=text],input[type=email]{
+    width: 220px;
+}
+.intakeForm{
+    width: 800px;
+    padding: 30px;
+    font-size: 20px;
+}
+form{
+    padding-bottom: 10px;
+}
+.form{
+    display: flex;
+}
+.leftbox{
+    width: 480px;
+    height: 100%;
+    float: left;
+}
+.rightbox{
+    height: 100%;
+}
+
+.subbox{
+    display: flex;
+    gap: 2rem;
+}
+
+.daysneeded{
+    display: flex;
+    gap: 2rem;
+}
+.daysneeded label{
+    color: grey;
+}
+.daysneeded label, .daysneeded input{
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.time{
+    display: flex;
+    gap: 2.5rem;
+}
+.time input{
+    width: 80px;
+}
+
+.diet label,.diet input[type="radio"]{
+    margin: 6px 0 ;
+}
+.temperament{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+.temperament label,.temperament input[type="radio"]{
+    margin: 6px 0;
+}
+
+#describe{
+    display:none
+}
+#specialDiet{
+    display:none
+}
+#submit{
+    background-color: #133854;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    width: 200px;
+    border: none;
+    margin-bottom: 30px;
+}
+#submit:hover{
+    background-color:orange;
+}
+#submit:focus{
+    background-color:blue;
+}
+
+
+footer{
+    color: white;
+    text-align: right;
+    padding: 15px;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+}
+footer img{
+    float: left;
+    margin: 15px;
+    
+    height: 65px;
+    vertical-align: middle;
+}
+address, nav a {
+    font-style: normal;
+}
+
+
+.alert{
+    color:red;
+}
+    

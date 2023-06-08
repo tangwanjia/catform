@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="WanjiaTang">
+    <meta name="email" content="tang0239@algonquinlive.com">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
+    <title>Fluffy Friends Cat Daycare</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./images/fluffylogo(300X300).png" alt="logo">
+        <h1>Fluffy Friends Cat Daycare</h1>
+    </header>
+
+    <nav>
+        <a href="registration.html">HOME</a>
+    </nav>
+
+    <main>
+        <div class="photo"><img src="images/cats.jpeg" alt="sleepingcats"></div>
+        <div class="intakeForm">
+
+            <h2>Cat Intake Form</h2>
+            <form name="profileForm" method="get">
+                <div class="form">
+                    <div class="leftbox">
+                        <div class="subbox">
+                            <div class="subleft">
+                                <label for="catname">Name of cat</label><br>
+                                <input type="text" id="catname" placeholder="Mr. Whiskers"><br>
+                                <span id="catNameWarning" class="alert"></span><br>
+                            </div>
+                            <div class="subright">
+                                <label for="catage">Age of Cat</label><br>
+                                <input type="number" id="catage" min="0" max="20"><br>
+                                <span></span><br>
+                            </div>
+                        </div>
+                        <p>Days Needed</p>
+                        <div class="daysneeded">
+                            <div>
+                                <label for="mon">Mon.</label><br>
+                                <input type="checkbox" id="mon" name="daysneeded" value="mon">
+                            </div>
+                            <div>
+                                <label for="tue">Tue.</label><br>
+                                <input type="checkbox" id="tue" name="daysneeded" value="tue">
+                            </div>
+                            <div>
+                                <label for="wed">Wed.</label><br>
+                                <input type="checkbox" id="wed" name="daysneeded" value="wed">
+                            </div>
+                            <div>
+                                <label for="thu">Thu.</label><br>
+                                <input type="checkbox" id="thu" name="daysneeded" value="thu">
+                            </div>
+                            <div>
+                                <label for="fri">Fri.</label><br>
+                                <input type="checkbox" id="fri" name="daysneeded" value="fri">
+                            </div>
+                            <div id="saturday">
+                                <label for="sat">Sat.</label><br>
+                                <input type="checkbox" id="sat" name="daysneeded" value="sat" disabled>
+                            </div>
+                            <div id="sunday">
+                                <label for="sun">Sun.</label><br>
+                                <input type="checkbox" id="sun" name="daysneeded" value="sun" disabled>
+                            </div>
+
+                        </div>
+                        <span id="daysNeededWarning" class="alert"></span><br>
+
+                        <div class="time">
+                            <div class="arrivetime">
+                                <label for="timearrive">Time Arrive</label><br>
+                                <select name="timearrive" id="timearrive">
+                                    <option value="" disabled selected>Select your time</option>
+                                    <option value="6.00">6:00 AM</option>
+                                    <option value="6.30">6:30 AM</option>
+                                    <option value="7.00">7:00 AM</option>
+                                    <option value="7.30">7:30 AM</option>
+                                    <option value="8.00">8:00 AM</option>
+                                    <option value="8.30">8:30 AM</option>
+                                    <option value="9.00">9:00 AM</option>
+                                    <option value="9.30">9:30 AM</option>
+                                    <option value="10.00">10:00 AM</option>
+                                    <option value="10.30">10:30 AM</option>
+                                    <option value="11.00">11:00 AM</option>
+                                    <option value="11.30">11:30 AM</option>
+                                    <option value="12.00">12:00 PM</option>
+                                </select><br>
+                                <span id="arriveTimeWarning" class="alert"></span>
+                            </div>
+                            <div class="leavetime">
+                                <label for="leavetime">Time Leave</label><br>
+                                <select name="timeLeave" id="timeLeave">
+                                    <option value="" disabled selected>Select your time</option>
+                                    <option value="10.00">10:00 AM</option>
+                                    <option value="10.30">10:30 AM</option>
+                                    <option value="11.00">11:00 AM</option>
+                                    <option value="11.30">11:30 AM</option>
+                                    <option value="12.00">12:00 PM</option>
+                                    <option value="12.30">12:30 PM</option>
+                                    <option value="13.00">13:00 PM</option>
+                                    <option value="13.30">13:30 PM</option>
+                                    <option value="14.00">14:00 PM</option>
+                                    <option value="14.30">14:30 PM</option>
+                                    <option value="15.00">15:00 PM</option>
+                                    <option value="15.30">15:30 PM</option>
+                                    <option value="16.00">16:00 PM</option>
+                                    <option value="16.30">16:30 PM</option>
+                                    <option value="17.00">17:00 PM</option>
+                                    <option value="17.30">17:30 PM</option>
+                                    <option value="18.00">18:00 PM</option>
+                                </select><br>
+                                <span id="leaveTimeWarning" class="alert"></span>
+                            </div>
+                        </div>
+                        <span></span><br>
+                        <div class="diet">
+                            <input type="checkbox" id="neutered" name="diet" value="neutered">
+                            <label for="neutered">Cat Spayed/Neutered</label><br>
+                            <input type="checkbox" id="special" name="diet" value="special" onclick="myFunction2()">
+                            <label for="special">Special Diet</label><br>
+                            <div id="specialDiet">
+                                <label for="describediet">Describe Diet</label><br>
+                                <input type="text" id="describediet" placeholder="Mr Whiskers eats only live mice"><br>
+                                <span id="describeDietWarning" class="alert"></span><br>
+
+                            </div>
+
+
+                        </div>
+
+                        <label for="ownername">Owner's Name</label><br>
+                        <input type="text" id="ownername" placeholder="Cat Owner"><br>
+                        <span id="ownerNameWarning" class="alert"></span><br>
+
+                        <label for="daytimephone">Daytime Phone</label><br>
+                        <input type="tel" id="daytimephone" placeholder="(123)456-7890"><br>
+                        <span id="daytimePhoneWarning" class="alert"></span><br>
+
+                        <label for="cellphone">Cell Phone</label><br>
+                        <input type="tel" id="cellphone" placeholder="(123)456-7890"><br>
+                        <span id="phoneWarning" class="alert"></span><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" placeholder="catowner@fluffy.com"><br>
+                        <span id="emailWarning" class="alert"></span><br>
+
+                        <span></span><br>
+                    </div>
+                    
+                    <div class="rightbox">
+                        <p>Temperament of Cat</p>
+                        <div class="temperament">
+                            <div>
+                                <input type="radio" id="friendly" name="cat_temp" value="Friendly" checked
+                                    onclick="myFunction(0)">
+                                <label for="friendly">Friendly</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="sleepy" name="cat_temp" value="Sleepy" onclick="myFunction(0)">
+                                <label for="sleepy">Sleepy</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="independent" name="cat_temp" value="Independent"
+                                    onclick="myFunction(0)">
+                                <label for="independent">Independent</label><br>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" id="terrirotial" name="cat_temp" value="Terrirotial"
+                                    onclick="myFunction(1)">
+                                <label for='terrirotial'>Terrirotial</label><br>
+                                <div id="describe">
+                                    <label for='terrirotialdescribe'>Describe Territorial</label><br>
+                                    <input type="text" name="cat_temp" id="terrirotialdescribe">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <br><br><br><br><br><br>
+                        <label for="contactName">Emergency Contact Name</label><br>
+                        <input type="texts" id="contactName" placeholder="Cat Friend"><br>
+                        <span id="contactNameWarning" class="alert"></span><br>
+                        <label for="contactPhone">Contact Phone</label><br>
+                        <input type="tel" id="contactPhone" placeholder="(123)456-7890"><br>
+                        <span id="contactPhoneWarning" class="alert"></span><br>
+
+
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" name="submitBtn" id="submit">
+                </div>
+            </form>
+
+        </div>
+        <script src="js/validation.js"></script>
+        <script src="js/events.js"></script>
+
+
+    </main>
+
+    <br><br></br>
+    <footer>
+        <address>
+            <img src="images/PetDiversityPlusLogo.png" alt="Pet Diversity Plus logo">
+            <img src="images/BBBcertified.png" alt="Better Business Bureau A+ rating">
+            123 Fluffy Street<br>
+            Ottawa, Ontario<br>
+            (613) 123-CATS<br>
+            <a href="mailto:fluffyfriends@catdaycare.ca?subject=inquiry%20from%20website">
+                fluffyfriends@catdaycare.ca</a>
+        </address>
+    </footer>
+</body>
+
+</html>
